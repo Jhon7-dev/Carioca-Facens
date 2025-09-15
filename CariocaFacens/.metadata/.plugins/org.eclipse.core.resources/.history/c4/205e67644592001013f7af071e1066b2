@@ -1,0 +1,11 @@
+package com.joao.estruturaDeDados.interfaces;
+
+public interface Comparable {
+	boolean isLT(Comparable object); // menor que
+	boolean isLE(Comparable object); // maior que
+	boolean isGT(Comparable object); // menor ou igual a
+	boolean isGE(Comparable object); // maior ou 
+	boolean isEQ(Comparable object);
+	boolean isNE(Comparable object);
+	int compare(Comparable object);
+}

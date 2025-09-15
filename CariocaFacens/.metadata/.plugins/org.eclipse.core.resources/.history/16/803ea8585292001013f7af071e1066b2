@@ -1,0 +1,6 @@
+package com.joao.estruturaDeDados.interfaces;
+
+public interface Stack extends Container{
+	Object getTop(); // objeto do topo da pilha
+	void push (Object obejct);
+}

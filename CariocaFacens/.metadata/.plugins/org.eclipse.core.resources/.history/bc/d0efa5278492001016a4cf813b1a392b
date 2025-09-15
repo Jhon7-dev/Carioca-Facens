@@ -1,0 +1,27 @@
+package application;
+
+
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+		Object [] vetor = new Object[8];
+		vetor[0] = "brasil";
+		vetor[1] = "Eua";
+		vetor[2] = "japão";
+		vetor[3] = "méxico";
+		vetor[4] = "colombia";
+		vetor[5] = "peru";
+		vetor[6] = "china";
+		vetor[7] = "coreia";
+		for(int i = 0;i<vetor.length;i++) {
+			System.out.println(vetor[i]);
+		}
+		System.out.println("DE TRÁS P FRENTE");
+		for(int i = 7;i<vetor.length;i--) {
+			System.out.println(vetor[i]);
+		}
+		
+	}
+}

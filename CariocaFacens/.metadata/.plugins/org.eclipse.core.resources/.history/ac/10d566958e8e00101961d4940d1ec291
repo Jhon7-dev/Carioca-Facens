@@ -1,0 +1,18 @@
+package com.joao.estruturadados.vetor.teste;
+
+import com.joao.estruturadados.vetor.Vetor;
+
+public class Aula09 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vetor vetor = new Vetor(10);
+
+	//	vetor.adiciona("JAVA");
+		vetor.adiciona("CSS");
+		vetor.adiciona("java");
+		vetor.adiciona("python");
+
+
+	}
+}

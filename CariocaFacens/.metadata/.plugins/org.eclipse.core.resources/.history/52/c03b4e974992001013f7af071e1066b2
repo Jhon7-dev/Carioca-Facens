@@ -1,0 +1,10 @@
+package com.joao.estruturaDeDados.abstracts;
+
+public abstract class AbstractObject  implements Comparable{
+	
+	
+	public final boolean isLT(Comparable object) {
+		return compare(object)<0;
+	}
+	pulic final boolean isLE(Comparable)
+}

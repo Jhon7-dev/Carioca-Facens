@@ -1,0 +1,23 @@
+package main;
+
+import entities.Pilha;
+
+public class TestPilha {
+
+	public static void main(String[] args) {
+		Pilha pilha = new Pilha(4);
+		pilha.empilhar("j");
+		pilha.empilhar("O");
+		pilha.empilhar("ã");
+		pilha.empilhar("o");
+		//pilha.desempilhar();
+		pilha.empilhar("v");
+		//pilha.empilhar("i");
+		//pilha.empilhar("c");
+		///pilha.empilhar("t");
+		//pilha.empilhar("o");
+		//pilha.empilhar("r");
+		pilha.imprimirPilha();
+	}
+
+}

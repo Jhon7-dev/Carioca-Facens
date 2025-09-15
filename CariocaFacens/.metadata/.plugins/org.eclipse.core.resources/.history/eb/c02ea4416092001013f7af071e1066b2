@@ -1,0 +1,14 @@
+package com.joao.estruturaDeDados.application;
+
+import com.joao.estruturaDeDados.entities.StackAsArray;
+
+public class ProgarmaStack {
+
+	public static void main(String[] args) {
+		StackAsArray pilha = new StackAsArray(10);
+		
+		pilha.
+
+	}
+
+}

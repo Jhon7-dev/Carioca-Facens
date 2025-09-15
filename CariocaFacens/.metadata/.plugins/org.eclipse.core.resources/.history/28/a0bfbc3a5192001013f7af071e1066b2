@@ -1,0 +1,40 @@
+package com.joao.estruturaDeDados.entities;
+
+import com.joao.estruturaDeDados.abstracts.AbstractObject;
+
+public class Int extends AbstractObject {
+	
+	protected int value;
+	
+	public Int(int value) {
+		this.value = value;
+	}
+	public int intValue() {
+		return value;
+	}
+
+	@Override
+	protected int compareTo(Comparable object) {
+		int arg = (Int) object;
+		long diff = (long) value - (long)arg.value;
+		if(diff<0) {
+			return -1;
+		}else if(diff>0) {
+			retrun 1;
+		}else {
+			return 0;
+		}
+	}
+
+	@Override
+	protected int compareTo(Comparable arg) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

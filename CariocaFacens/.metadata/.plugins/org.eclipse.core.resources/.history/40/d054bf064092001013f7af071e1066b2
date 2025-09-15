@@ -1,0 +1,17 @@
+package com.joao.estruturaDeDados.application;
+
+import com.joao.estruturaDeDados.entities.Array;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Array array = new Array ();
+		Array a = new Array();
+		Array b = new Array();
+		
+		b.assign(a);
+		System.out.println(b);
+		System.out.println(b);
+	}
+
+}

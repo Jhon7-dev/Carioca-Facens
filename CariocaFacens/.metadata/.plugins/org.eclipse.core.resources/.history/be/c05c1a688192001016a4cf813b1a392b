@@ -1,0 +1,13 @@
+package application;
+
+import java.lang.reflect.Array;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+		Object [] array = new Array[8];
+		array[1] = "joao";
+	}
+
+}

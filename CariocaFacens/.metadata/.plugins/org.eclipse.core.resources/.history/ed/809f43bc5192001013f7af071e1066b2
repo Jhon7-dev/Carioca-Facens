@@ -1,0 +1,6 @@
+package com.joao.estruturaDeDados.interfaces;
+
+public interface Container {
+	int getCount();
+	boolean isEmpty
+}

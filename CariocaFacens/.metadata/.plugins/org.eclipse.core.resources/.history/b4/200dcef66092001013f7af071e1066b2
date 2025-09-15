@@ -1,0 +1,26 @@
+package com.joao.estruturaDeDados.application;
+
+import com.joao.estruturaDeDados.entities.StackAsArray;
+
+public class ProgarmaStack {
+
+	public static void main(String[] args) {
+		StackAsArray pilha = new StackAsArray(10);
+		
+		pilha.push("J");
+		pilha.push("o");
+		pilha.push("ã");
+		pilha.push("o");
+		pilha.push("v");
+		pilha.push("i");
+		pilha.push("c");
+		pilha.push("t");
+		pilha.push("o");
+		pilha.push("r");
+		pilha.pop();
+		pilha.toString();
+		System.out.println(pilha);
+
+	}
+
+}

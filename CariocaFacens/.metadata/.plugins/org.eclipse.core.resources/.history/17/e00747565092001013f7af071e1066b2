@@ -1,0 +1,7 @@
+package com.joao.estruturaDeDados.entities;
+
+import com.joao.estruturaDeDados.abstracts.AbstractObject;
+
+public class Int extends AbstractObject {
+	
+}

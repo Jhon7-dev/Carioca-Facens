@@ -1,0 +1,61 @@
+package entities;
+
+public class Pilha {
+	private String [] object;
+	private int topo; // controlar o índice do topo da pilha
+	//private int tamanho;
+	
+	public Pilha(int tamanho) {
+		topo = -1; // 
+		object = new String[tamanho];
+	}
+
+	public String[] getObject() {
+		return object;
+	}
+
+	public void setObject(String[] object) {
+		this.object = object;
+	}
+
+	public int getTopo() {
+		return topo;
+	}
+
+	public void setTopo(int topo) {
+		this.topo = topo;
+	}
+	public void empilhar(String valor) {
+		if(verificaPilhaVazia()) {
+			topo++;
+			object[topo] = valor;
+		}
+	}
+	public void desempilhar() {
+		if(verificaPilhaVazia()) {
+			topo --;
+		}
+	}
+	public String retornarElementoTopoPilha() {
+		return object[topo];
+	}
+	public void imprimirPilha() {
+		for(int i = 0;i<=topo;i++) {
+			System.out.println(" " + object[i]);
+		}
+	}
+	public boolean verificaPilhaVazia() {
+		 
+		if(topo == -1) {
+			System.out.println("Pilha vazia");
+			return   false;
+		}
+		return true;
+	}
+	public boolean verificarPilhaCheia() {
+		if(topo == object.length-1) {
+			return false;
+		}
+		return true;
+	}
+}

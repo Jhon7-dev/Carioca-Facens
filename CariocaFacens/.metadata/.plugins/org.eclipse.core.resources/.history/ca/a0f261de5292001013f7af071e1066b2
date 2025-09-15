@@ -1,0 +1,5 @@
+package com.joao.estruturaDeDados.abstracts;
+
+public abstract class AbstractContainer ex {
+
+}

@@ -1,0 +1,55 @@
+package com.joao.estruturaDeDados.entities;
+
+public class Array {
+	protected Object[] data;
+	protected int base;
+
+	public Array(int n, int m) {
+		data = new Object[n]; // o n é o comprimento do vetor desejado
+		base = m; // limite inferior dos índices do vetor(topo)
+	}
+
+	public Array() {
+		this(0, 0);
+	}
+
+	public Array(int n) {
+		this(n, 0);
+	}
+
+	// Método Assign -> atribuição de elementos de um vetor a outro
+	public void assign(Array array) {
+		if (array != this) {
+			if (data != array.data) {
+				data = new Object[array.data.length];
+				for (int i = 0; i < data.length; i++) {
+					data[i] = array.data[i];
+					base = array.base;
+				}
+			}
+		}
+	}
+		
+	// Métodos de Acesso
+	//os elementos dos vetores são acessados através dos uso de colchetes [e]
+	// a[2] = b[3];
+	// ao usar a classe Array, podemos acessar seus elementos
+	// a.getData()[2] = b.getData()[3];
+
+	public Object[] getData() {
+		return data;
+	}
+
+	public int getBase() {
+		return base;
+	}
+
+	public int getLength() {
+		return data.length;
+	}
+	
+	// Métodos Get e Put
+	//o método get recebe um índice e retorna o elemento que está nessa posição do vetor.
+	// o método put recebe um índice d
+
+}

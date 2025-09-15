@@ -1,0 +1,21 @@
+package com.joao.estruturaDeDados.entities;
+
+
+
+public class Programa_43_Assign {
+	protected Object data;
+	protected int base;
+	
+	public void assign (Programa_43_Assign array) {
+		if(array != this) {
+			if(data == null || array.data) {
+				data = new Object[array.data.legth];
+			}
+				for(int i = 0;i<data.length;i++) {
+					data[i] = array.data[i];		
+				}
+				base = array.base;
+			}
+		}
+	}
+}

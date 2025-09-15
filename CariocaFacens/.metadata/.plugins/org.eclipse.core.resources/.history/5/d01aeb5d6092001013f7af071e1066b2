@@ -1,0 +1,90 @@
+package com.joao.estruturaDeDados.entities;
+
+import com.joao.estruturaDeDados.abstracts.AbstractContainer;
+import com.joao.estruturaDeDados.interfaces.Stack;
+
+public class StackAsArray extends AbstractContainer implements Stack {
+
+	protected Object[] array;
+	protected int count;
+	private Object object;
+
+	public StackAsArray(int size) { // construtor
+		array = new Object[size]; // o parametro size é o número máx de itens que podem ser colocados na pilha
+	}
+
+	// a função do método purge é remover todos os elemntos de um container.
+	// os objetos em uma pilha ocupam as primeiras "count" posições do vetor.
+	// para esvaziar a pilha, o método purge atribui o valor null as primeiras
+	// "count" posições do vetor.
+	@Override
+	public void purge() {
+
+		while (count > 0) {
+			array[--count] = null;
+		}
+	}
+
+	// o método pop remove e retorna um elemento da pilha
+	
+	// primeiro o método verifica se a pilha está ou não vazia, ele chama a exceção
+	// ContainerEmptyException.
+	// Caso contrário,ele diminui a variável "contador" de uma unidade e retorna o
+	// item encontrado no topo da pilha.
+	//
+	@Override
+	public Object pop() {
+		if (count == 0) {
+			// throw new ContainerEmptyException();
+			Object result = array[-count];
+			array[count++] = null;
+			return result;
+		}
+		return null;
+	}
+	//método push, ele insere um elemento na pilha.
+	
+	//ele verifica primeiro se existe um lugar na pilha. Se não existe lugar para inserção na pilha, ele chama a exceção.
+	//caso contrário ele coloca o objeto no vetor e incrementa uma unidade a variável count.
+	//
+	@Override
+	public void push(Object obejct) {
+		if (count == array.length) {
+			// throw new ContainerFullException();
+			array[count++] = object;
+		}
+	}
+	// retorna o ultimo objeto da pilha
+	@Override
+	public Object getTop() {
+		if (count == 0) {
+			return array[count - 1];
+		} else {
+
+			return null;
+		}
+	}
+
+// métodos da herança 
+	
+	@Override
+	protected int compareTo(Comparable arg) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+}

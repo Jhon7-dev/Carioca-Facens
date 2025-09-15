@@ -1,0 +1,44 @@
+package com.joao.estruturaDeDados.entities;
+
+import com.joao.estruturaDeDados.abstracts.AbstractContainer;
+import com.joao.estruturaDeDados.interfaces.Queue;
+
+public class QueueAsArray extends AbstractContainer implements Queue {
+	
+	@Override
+	public void purge() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object getHead() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void enqueue(Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object dequeue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected int compareTo(Comparable arg) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

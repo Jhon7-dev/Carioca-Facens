@@ -1,0 +1,12 @@
+package com.joao.estruturaDeDados.entities;
+
+public class Programa_43_Assign {
+	protected Object data;
+	protected int base;
+	
+	public void assign (Array array) {
+		if(array != this) {
+			if(data.length != array.data.)
+		}
+	}
+}

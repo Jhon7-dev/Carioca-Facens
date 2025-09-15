@@ -1,0 +1,33 @@
+package com.joao.estruturaDeDados.application;
+
+import com.joao.estruturaDeDados.entities.Array;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// Exercicio 1
+		Array a1 = new Array(3, 0);
+		a1.put(0, "a");
+		a1.put(1, "v");
+		a1.put(2, "c");
+
+		System.out.println("a1: " + a1);
+
+		Array a2 = new Array(3, 0);
+
+		a2.assign(a1);
+
+		System.out.println("a2 assign --> " + a2);
+
+		a1.put(1, "z");
+		
+		a1.getData()[2] = a2.getData()[1];
+		
+		System.out.println(a1);
+		System.out.println(a2);
+
+		// System.out.println("novo a1 : " + a1);
+		// System.out.println("a2 continua " + a2);
+	}
+
+}

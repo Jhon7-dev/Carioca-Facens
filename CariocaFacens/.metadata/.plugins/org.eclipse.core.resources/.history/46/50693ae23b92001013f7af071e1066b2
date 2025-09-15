@@ -1,0 +1,18 @@
+package com.joao.estruturaDeDados.entities;
+
+public class Programa_44_Metodo_Acesso {
+	
+	protected Object data;
+	protected int base;
+	
+	public Object getData() {
+		retrun data;
+	}
+	public int getBase() {
+		return base;
+	}
+	public int getLength() {
+		return data.length;
+	}
+
+}

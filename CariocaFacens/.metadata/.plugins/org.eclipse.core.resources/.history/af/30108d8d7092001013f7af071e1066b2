@@ -1,0 +1,8 @@
+package com.joao.estruturaDeDados.entities;
+
+import com.joao.estruturaDeDados.abstracts.AbstractContainer;
+import com.joao.estruturaDeDados.interfaces.Queue;
+
+public class QueueAsArray extends AbstractContainer implements Queue {
+
+}

@@ -1,0 +1,32 @@
+package com.joao.estruturaDeDados.entities;
+
+public class Array {
+	protected Object[] data;
+	protected int base;
+
+	public Array(int n, int m) {
+		data = new Object[n]; // o n é o comprimento do vetor desejado
+		base = m; // limite inferior dos índices do vetor(topo)
+	}
+
+	public Array() {
+		this(0, 0);
+	}
+
+	public Array(int n) {
+		this(n, 0);
+	}
+
+	public void assign(Array array) {
+		if (array != this) {
+			if (data != array.data) {
+				data = new Object[array.data.length];
+				for (int i = 0; i < data.length; i++) {
+					data[i] = array.data[i];
+					base = array.base;
+				}
+			}
+		}
+	}
+
+}

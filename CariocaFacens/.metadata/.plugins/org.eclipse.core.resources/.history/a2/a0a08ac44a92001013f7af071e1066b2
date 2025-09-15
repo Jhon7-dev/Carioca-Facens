@@ -1,0 +1,35 @@
+package com.joao.estruturaDeDados.abstracts;
+
+public abstract class AbstractObject  implements Comparable{
+	
+	public final boolean isLT(Comparable object) {
+		return compare(object)<0;
+	}
+	@Override
+	public final boolean isLE(Comparable object) {
+		return compare(object)<= 0;
+	}
+	@Override
+	public final boolean isGT(Comparable object) {
+		return compare(object)> 0;
+	}
+	@Override
+	public final boolean isGE(Comparable object) {
+		return compare(object)>= 0;
+	}
+	@Override
+	public final boolean isEQ(Comparable object) {
+		return compare(object) == 0;
+	}
+	@Override
+	public final boolean isNE(Comparable object) {
+		return compare(object) != 0;
+	}
+	@Override
+	public final boolean equals(Object object) {
+		if(object instanceof Comparable) {
+			return isEQ((Comparable) object);
+		}
+		
+	}
+}

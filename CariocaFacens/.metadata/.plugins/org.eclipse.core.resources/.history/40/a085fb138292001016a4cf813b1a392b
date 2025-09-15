@@ -1,0 +1,24 @@
+package application;
+
+import java.lang.reflect.Array;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+		Object [] array = new Array[8];
+		array[0] = "joao";
+		array[1] = "marcelo";
+		array[2] = "pedro";
+		array[3] = "juan";
+		array[4] = "jair";
+		array[5] = "ana";
+		array[6] = "leticia";
+		array[7] = "coreia";
+		for(int i = 0;i<array.length;i++) {
+			System.out.println(array[i]);
+		}
+		System.out.println(array);
+	}
+
+}
